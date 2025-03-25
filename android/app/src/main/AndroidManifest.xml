@@ -1,4 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Add camera permission -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    
+    <!-- Add internet permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:label="imgtotxt"
         android:name="${applicationName}"
