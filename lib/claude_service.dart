@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 
 class ClaudeService {
   final String _baseUrl = 'https://api.anthropic.com/v1/messages';
-  final String _apiKey = 'YOUR-API-KEY';
+  final String _apiKey = 'API KEY BURAYA';
 
   Future<String> analyzeImage(File image) async {
     final bytes = await image.readAsBytes();
@@ -14,12 +14,12 @@ class ClaudeService {
         headers: {
           'Content-Type': 'application/json',
           'x-api-key': _apiKey,
-          'anthrpoic-version': '2023-06-01',
+          'anthropic-version': '2023-06-01',
         },
         body: jsonEncode({
           'model': 'claude-3-opus-20240229',
           'max_tokens': 50,
-          'message': [
+          'messages': [
             {
               'role': 'user',
               'content': [
@@ -27,13 +27,13 @@ class ClaudeService {
                   'type': 'image',
                   'source': {
                     'type': 'base64',
-                    'media_type': ' image/jpeg',
+                    'media_type': 'image/jpeg',
                     'data': base64Image,
                   },
                 },
                 {
                   'type': 'text',
-                  'text': 'Fotoğrafta ne gördüğünü açıkla ',
+                  'text': 'Resimde ne görüyorsun?(ingilizce karakter kullanarak türkçe çıktı oluştur)',
                 }
               ],
             }

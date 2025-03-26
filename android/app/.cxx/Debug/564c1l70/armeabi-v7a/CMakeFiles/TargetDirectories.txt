@@ -1,0 +1,2 @@
+C:/Users/kamil/Desktop/AndroidProjeler/imgtotxt/android/app/.cxx/Debug/564c1l70/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/kamil/Desktop/AndroidProjeler/imgtotxt/android/app/.cxx/Debug/564c1l70/armeabi-v7a/CMakeFiles/rebuild_cache.dir
